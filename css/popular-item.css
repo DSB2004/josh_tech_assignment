@@ -5,27 +5,63 @@
   width: 100%;
   height: 400px;
 }
+.swiper-wrapper {
+  width: 90% !important;
+}
 .swiper-scrollbar {
   display: none !important;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: var(--primary-green);
-  color: white !important;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: none !important;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: ""; /* remove default */
 }
 
 .swiper-button-next svg,
 .swiper-button-prev svg {
   display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--primary-green);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  z-index: 10000;
+  padding: 1rem;
+  position: relative;
+}
+
+.swiper {
+  padding: 0 40px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: url(../assets/icons/white-arrow.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.swiper-button-prev {
+  left: 0;
+  rotate: 180deg;
+}
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 100% !important;
+  border: 2px solid var(--primary-green) !important;
+  background-color: white !important;
+}
+
+.swiper-button-disabled::after:hover {
+  content: url(../assets/icons/green-play.svg) !important;
+  rotate: 180deg;
 }

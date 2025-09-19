@@ -63,7 +63,7 @@
               delivered to a customer.
             </p>
 
-            <form action="" class="hero-section-form rounded-md flex">
+            <form action="" method="" class="hero-section-form rounded-md flex">
               <input
                 type="text"
                 class="p-4 border-0 outline-none"
@@ -97,26 +97,49 @@
 
       <!-- Popular Items -->
 
-      <section class="wrapper pt-20 flex flex-col items-center">
+      <section class="wrapper pt-20 gap-10 flex flex-col items-center">
         <h2 class="popular-header">Popular Item</h2>
 
-        <div class="swiper border">
-          <!-- Additional required wrapper -->
+        <div class="swiper">
           <div class="swiper-wrapper" id="carousel"></div>
-
-          <div class="swiper-button-prev p-4">
-            <img src="./assets/icons/play.svg" alt="" />
-          </div>
-          <div class="swiper-button-next p-4"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
 
         <button
+          id="dish-button"
           class="py-4 w-48 rounded-md border-0 outline-none"
           style="color: white; background-color: var(--primary-green)"
         >
-          Submit
+          Request a Dish
         </button>
+
+        <dialog
+          showModal
+          id="dish-dialog"
+          class="p-4 rounded-lg border-0 outline-none"
+        >
+          <div class="p-4" id="dialog-content"></div>
+          <div class="flex justify-between items-center gap-4">
+            <button
+              id="dialog-close"
+              class="py-4 w-48 rounded-md border-0 outline-none"
+              style="color: white; background-color: var(--primary-green)"
+            >
+              Submit Request
+            </button>
+            <button
+              id="dialog-cancel"
+              class="py-4 w-48 rounded-md border-0 outline-none"
+              style="color: white; background-color: var(--primary-green)"
+            >
+              Cancel
+            </button>
+          </div>
+        </dialog>
       </section>
+
+      <!-- Popular Items -->
 
       <!-- video section -->
 

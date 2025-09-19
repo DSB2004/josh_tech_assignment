@@ -49,8 +49,10 @@ textarea::placeholder {
   font-weight: 500;
   font-style: normal;
 }
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.51);
+}
 
-/* custom */
 
 .wrapper {
   width: 85%;
@@ -58,4 +60,3 @@ textarea::placeholder {
 
   margin: auto;
 }
-
