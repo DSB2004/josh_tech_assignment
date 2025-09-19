@@ -1,0 +1,20 @@
+.hero-section {
+  padding: 120px 0px 40px 0px;
+}
+.hero-section-content {
+  width: 50%;
+}
+
+.hero-section-heading {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+.hero-section-para {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.hero-section-form {
+  overflow: hidden;
+  width: fit-content;
+}

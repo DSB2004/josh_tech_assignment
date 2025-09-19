@@ -1,0 +1,59 @@
+/* variables */
+@import url(./variables.css);
+
+/* utility classes */
+@import url(./utility/padding.css);
+@import url(./utility/padding.css);
+@import url(./utility/margin.css);
+@import url(./utility/border.css);
+@import url(./utility/flex.css);
+@import url(./utility/common.css);
+@import url(./utility/grid.css);
+@import url(./utility/width.css);
+
+/* component based css */
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./kitchen-grid.css);
+@import url(./video-section.css);
+@import url(./contact-form.css);
+@import url(./footer.css);
+/* element based */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+textarea::placeholder {
+  font-family: "Open Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* custom */
+
+.wrapper {
+  width: 85%;
+  max-width: 1500px;
+
+  margin: auto;
+}

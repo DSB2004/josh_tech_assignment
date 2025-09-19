@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="flex flex-col" style="background-color: var(--background-white)">
+    <main>
+      <!-- header -->
+      <header class="p-3" style="background-color: var(--primary-green)">
+        <div class="flex justify-between wrapper">
+          <h2 class="main-header-heading">JTGeats</h2>
+          <nav class="flex gap-8 items-center">
+            <a href="#" class="main-header-link">Home</a>
+            <a href="#" class="main-header-link">About</a>
+            <a href="#" class="main-header-link">Menu</a>
+            <a href="#" class="main-header-link">Blog</a>
+            <a href="#" class="main-header-link">Content</a>
+          </nav>
+
+          <nav class="flex gap-4 items-center">
+            <img
+              src="./assets/icons/search.svg"
+              alt=""
+              width="25px"
+              height="25px"
+            />
+            <img
+              src="./assets/icons/cart.svg"
+              alt=""
+              width="25px"
+              height="25px"
+            />
+          </nav>
+        </div>
+      </header>
+
+      <!-- header -->
+      <!-- hero section -->
+      <section
+        style="background-color: var(--primary-green)"
+        class="hero-section"
+      >
+        <div class="wrapper flex justify-between">
+          <div class="hero-section-content">
+            <h1 class="hero-section-heading" style="color: var(--white)">
+              Authentic Home food in India
+            </h1>
+            <p class="hero-section-para py-4" style="color: var(--white)">
+              TGeats is a courier service in which authentic home cook food is
+              delivered to a customer.
+            </p>
+
+            <form action="" class="hero-section-form rounded-md flex">
+              <input
+                type="text"
+                class="p-4 border-0 outline-none"
+                placeholder="Enter food you love"
+              />
+              <button
+                class="py-4 px-6 border-0"
+                style="
+                  background-color: var(--primary-yellow);
+                  color: var(--white);
+                "
+              >
+                Search
+              </button>
+            </form>
+          </div>
+          <img src="./assets/images/cuate.png" alt="" />
+        </div>
+      </section>
+      <!-- hero section -->
+
+      <!-- grid section -->
+      <section class="wrapper pt-10">
+        <h2 class="">Home Kitchen</h2>
+        <div class="card-grid pt-10" id="kitchen-card-grid">
+          <!-- cards -->
+          <!-- cards-->
+        </div>
+      </section>
+      <!-- grid section -->
+
+      <!-- video section -->
+
+      <section class="pt-20 relative flex flex-col items-center">
+        <div class="wrapper flex flex-col items-center gap-5">
+          <h2 class="video-section-heading">
+            We are providing best home cooked food delivery service
+          </h2>
+          <p class="video-section-para">
+            Away from home and craving the tasty homemade recipes? Choose from a
+            selection of our delicious home cooked dishes
+          </p>
+
+          <div class="relative pt-10" id="video-box">
+            <div
+              id="video-button"
+              class="absolute video-button rounded-full flex items-center justify-center"
+              style="background-color: var(--primary-green)"
+            >
+              <img src="./assets/icons/play.svg" alt="" />
+            </div>
+            <video
+              id="video"
+              src="./assets/video/cutting-video.mp4"
+              height="600"
+            ></video>
+          </div>
+        </div>
+
+        <div class="pt-10"></div>
+
+        <div
+          class="absolute video-background"
+          style="background-color: var(--secondary-green)"
+        ></div>
+      </section>
+
+      <!-- video section -->
+
+      <!-- contact section -->
+
+      <section class="wrapper flex items-center py-20 justify-between">
+        <div class="flex flex-col gap-1">
+          <h2 class="contact-heading">
+            Do you have a question or want to become a seller?
+          </h2>
+          <p class="contact-para">
+            Fill this form and our manager will contact you in next 48 hours
+          </p>
+          <form action="" class="pt-10 flex flex-col items-start gap-4">
+            <div class="flex items-center gap-2 w-full">
+              <input
+                placeholder="Your Name"
+                type="text"
+                class="p-4 rounded-md border-0 outline-none w-full"
+              />
+              <input
+                placeholder="Your e-mail"
+                type="text"
+                class="p-4 rounded-md border-0 outline-none w-full"
+              />
+            </div>
+            <textarea
+              placeholder="Your message"
+              class="p-4 rounded-md border-0 outline-none w-full"
+              style="box-sizing: border-box"
+              name=""
+              id=""
+              rows="6"
+            ></textarea>
+
+            <button
+              class="py-4 w-48 rounded-md border-0 outline-none"
+              style="color: white; background-color: var(--primary-green)"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <img src="./assets//images/contact.png" alt="" class="pt-20" />
+      </section>
+      <!-- contact section -->
+
+      <!-- footer -->
+      <footer class="py-4" style="background-color: var(--primary-green)">
+        <div class="flex py-4 gap-4 wrapper flex-col">
+          <div class="flex justify-between">
+            <h2 class="footer-heading" style="color: white">JTGeats</h2>
+            <nav class="flex gap-8 items-center">
+              <a
+                href="#"
+                class="footer-link text-decor-none"
+                style="color: white"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="footer-link text-decor-none"
+                style="color: white"
+                >About</a
+              >
+              <a
+                href="#"
+                class="footer-link text-decor-none"
+                style="color: white"
+                >Menu</a
+              >
+              <a
+                href="#"
+                class="footer-link text-decor-none"
+                style="color: white"
+                >Blog</a
+              >
+              <a
+                href="#"
+                class="footer-link text-decor-none"
+                style="color: white"
+                >Content</a
+              >
+            </nav>
+
+            <nav class="flex gap-4 items-center">
+              <img
+                src="./assets/icons/Facebook.svg"
+                alt=""
+                width="30px"
+                height="30px"
+              />
+              <img
+                src="./assets/icons/instagram.svg"
+                alt=""
+                width="30px"
+                height="30px"
+              />
+            </nav>
+          </div>
+
+          <div class="footer-seperator w-full"></div>
+        </div>
+      </footer>
+      <!-- footer -->
+    </main>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
