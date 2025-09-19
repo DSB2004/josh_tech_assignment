@@ -16,6 +16,7 @@
 @import url(./hero.css);
 @import url(./kitchen-grid.css);
 @import url(./video-section.css);
+@import url(./popular-item.css);
 @import url(./contact-form.css);
 @import url(./footer.css);
 /* element based */
@@ -57,3 +58,4 @@ textarea::placeholder {
 
   margin: auto;
 }
+

@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body class="flex flex-col" style="background-color: var(--background-white)">
@@ -83,13 +87,36 @@
 
       <!-- grid section -->
       <section class="wrapper pt-10">
-        <h2 class="">Home Kitchen</h2>
+        <h2 class="grid-header">Home Kitchen</h2>
         <div class="card-grid pt-10" id="kitchen-card-grid">
           <!-- cards -->
           <!-- cards-->
         </div>
       </section>
       <!-- grid section -->
+
+      <!-- Popular Items -->
+
+      <section class="wrapper pt-20 flex flex-col items-center">
+        <h2 class="popular-header">Popular Item</h2>
+
+        <div class="swiper border">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" id="carousel"></div>
+
+          <div class="swiper-button-prev p-4">
+            <img src="./assets/icons/play.svg" alt="" />
+          </div>
+          <div class="swiper-button-next p-4"></div>
+        </div>
+
+        <button
+          class="py-4 w-48 rounded-md border-0 outline-none"
+          style="color: white; background-color: var(--primary-green)"
+        >
+          Submit
+        </button>
+      </section>
 
       <!-- video section -->
 
@@ -233,5 +260,6 @@
       <!-- footer -->
     </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </html>

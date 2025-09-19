@@ -1,0 +1,31 @@
+.popular-header {
+  font-size: 2.5rem;
+}
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+.swiper-scrollbar {
+  display: none !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--primary-green);
+  color: white !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: none !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: ""; /* remove default */
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  display: none;
+}
