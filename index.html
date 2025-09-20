@@ -17,12 +17,12 @@
     <title>Document</title>
   </head>
   <body class="flex flex-col" style="background-color: var(--background-white)">
-    <main>
+    <main class="relative">
       <!-- header -->
       <header class="p-3" style="background-color: var(--primary-green)">
         <div class="flex justify-between wrapper">
           <h2 class="main-header-heading">JTGeats</h2>
-          <nav class="flex gap-8 items-center">
+          <nav class="flex gap-8 items-center main-header-nav">
             <a href="#" class="main-header-link">Home</a>
             <a href="#" class="main-header-link">About</a>
             <a href="#" class="main-header-link">Menu</a>
@@ -43,9 +43,29 @@
               width="25px"
               height="25px"
             />
+            <img
+              id="menu-btn"
+              class="header-menu-btn"
+              src="./assets/icons/menu.svg"
+              alt=""
+              width="30px"
+              height="30px"
+            />
           </nav>
         </div>
       </header>
+      <!-- side menu -->
+      <aside class="absolute menu shadow-lg" id="menu">
+        <nav class="p-4 flex gap-8 flex-col items-center menu-nav">
+          <h2 class="w-full menu-heading">JTGeats</h2>
+          <a href="#" class="text-decor-none w-full menu-link">Home</a>
+          <a href="#" class="text-decor-none w-full menu-link">About</a>
+          <a href="#" class="text-decor-none w-full menu-link">Menu</a>
+          <a href="#" class="text-decor-none w-full menu-link">Blog</a>
+          <a href="#" class="text-decor-none w-full menu-link">Content</a>
+        </nav>
+      </aside>
+      <!-- side menu -->
 
       <!-- header -->
       <!-- hero section -->
@@ -53,7 +73,7 @@
         style="background-color: var(--primary-green)"
         class="hero-section"
       >
-        <div class="wrapper flex justify-between">
+        <div class="wrapper flex justify-between hero">
           <div class="hero-section-content">
             <h1 class="hero-section-heading" style="color: var(--white)">
               Authentic Home food in India
@@ -80,7 +100,7 @@
               </button>
             </form>
           </div>
-          <img src="./assets/images/cuate.png" alt="" />
+          <img src="./assets/images/cuate.png" alt="" class="hero-img" />
         </div>
       </section>
       <!-- hero section -->
@@ -88,10 +108,7 @@
       <!-- grid section -->
       <section class="wrapper pt-10">
         <h2 class="grid-header">Home Kitchen</h2>
-        <div class="card-grid pt-10" id="kitchen-card-grid">
-          <!-- cards -->
-          <!-- cards-->
-        </div>
+        <div class="card-grid pt-10" id="kitchen-card-grid"></div>
       </section>
       <!-- grid section -->
 
@@ -164,7 +181,7 @@
             <video
               id="video"
               src="./assets/video/cutting-video.mp4"
-              height="600"
+              class="video"
             ></video>
           </div>
         </div>
@@ -181,8 +198,8 @@
 
       <!-- contact section -->
 
-      <section class="wrapper flex items-center py-20 justify-between">
-        <div class="flex flex-col gap-1">
+      <section class="wrapper flex items-center justify-between contact-us">
+        <div class="flex flex-col gap-1 contact-form">
           <h2 class="contact-heading">
             Do you have a question or want to become a seller?
           </h2>
@@ -219,16 +236,20 @@
             </button>
           </form>
         </div>
-        <img src="./assets//images/contact.png" alt="" class="pt-20" />
+        <img
+          src="./assets//images/contact.png"
+          alt=""
+          class="pt-20 contact-img"
+        />
       </section>
       <!-- contact section -->
 
       <!-- footer -->
       <footer class="py-4" style="background-color: var(--primary-green)">
         <div class="flex py-4 gap-4 wrapper flex-col">
-          <div class="flex justify-between">
+          <div class="flex justify-between footer">
             <h2 class="footer-heading" style="color: white">JTGeats</h2>
-            <nav class="flex gap-8 items-center">
+            <nav class="flex gap-8 items-center footer-nav">
               <a
                 href="#"
                 class="footer-link text-decor-none"

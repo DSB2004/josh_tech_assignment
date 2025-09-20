@@ -4,10 +4,20 @@ function createGridCard({
   price = "₹0",
   rating = "0.0",
   time = "0-0 min",
+  percentageOff,
 }) {
   return `
     <div class="w-fit flex flex-col rounded-md shadow-sm gap-2" style="background-color: var(--white)">
-      <img src="${imageSrc}" alt="${title}" width="300" height="300" />
+     <div class="relative">
+        <img src="${imageSrc}" alt="${title}" width="300" height="300" />
+        ${
+          percentageOff
+            ? `<span class="discount-badge">${percentageOff}</span>`
+            : ""
+        }
+      </div>
+    
+    
       <div class="mx-4 flex flex-col gap-2 pb-2">
         <div class="flex items-center justify-between">
           <h4 class="card-h4">${title}</h4>
@@ -36,11 +46,19 @@ function createSlideCard({
   price = "₹0",
   rating = "0.0",
   time = "0-0 min",
+  percentageOff,
 }) {
   return `
     <div class="swiper-slide">
-      <div class="w-fit m-auto shadow-md flex flex-col gap-2 rounded-md" style="background-color: var(--white)">
+      <div class="w-fit m-auto slider-card-custom flex flex-col gap-2 rounded-md" style="background-color: var(--white)">
+            <div class="relative">
         <img src="${imageSrc}" alt="${title}" width="300" height="300" />
+        ${
+          percentageOff
+            ? `<span class="discount-badge">${percentageOff}</span>`
+            : ""
+        }
+      </div>
         <div class="mx-4 flex flex-col gap-2 pb-2">
           <div class="flex items-center justify-between">
             <h4 class="card-h4">${title}</h4>
@@ -70,16 +88,18 @@ function createDailogCard({
   price = "₹0",
   rating = "0.0",
   time = "0-0 min",
+  percentageOff,
 }) {
   return `
 <div class="m-4 gap-4 flex flex-col items-center">
-  <img
-    class="rounded-md"
-    src=${imageSrc}
-    alt="Product Image"
-    width="300"
-    height="300"
-  />
+     <div class="relative">
+        <img src="${imageSrc}" class="rounded-md" alt="${title}" width="300" height="300" />
+        ${
+          percentageOff
+            ? `<span class="discount-badge">${percentageOff}</span>`
+            : ""
+        }
+      </div>
 
   <h3>${title}</h3>
   <div class="flex items-center justify-between">
@@ -133,7 +153,7 @@ function init() {
           640: { slidesPerView: 1 },
           1000: { slidesPerView: 2 },
           1200: { slidesPerView: 3 },
-          1500: { slidesPerView: 4 },
+          1600: { slidesPerView: 4 },
         },
       });
     });
@@ -185,5 +205,17 @@ window.onload = () => {
   });
   dialogCloseButton.addEventListener("click", () => {
     dishDialog.close();
+  });
+
+  const menuButton = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+
+  menuButton.addEventListener("click", () => {
+    console.log(menu.style.width);
+    if (menu.style.width === "250px") {
+      menu.style.width = "0px";
+    } else {
+      menu.style.width = "250px";
+    }
   });
 };

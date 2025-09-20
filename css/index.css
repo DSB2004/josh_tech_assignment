@@ -53,10 +53,11 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.51);
 }
 
-
 .wrapper {
   width: 85%;
   max-width: 1500px;
-
   margin: auto;
+  @media screen and (max-width: 900px) {
+    width: 95%;
+  }
 }

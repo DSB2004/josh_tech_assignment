@@ -1,13 +1,28 @@
 .hero-section {
   padding: 120px 0px 40px 0px;
+  @media screen and (max-width: 850px) {
+    padding-top: 80px;
+  }
+  @media screen and (max-width: 550px) {
+    padding-top: 40px;
+  }
 }
 .hero-section-content {
   width: 50%;
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
 }
 
 .hero-section-heading {
   font-size: 4.375rem;
   font-weight: 400;
+  @media screen and (max-width: 850px) {
+    font-size: 3.5rem;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 3rem;
+  }
 }
 .hero-section-para {
   font-size: 1.125rem;
@@ -17,4 +32,23 @@
 .hero-section-form {
   overflow: hidden;
   width: fit-content;
+}
+.hero-img {
+  @media screen and (max-width: 1200px) {
+    width: 400px;
+    aspect-ratio: 1;
+  }
+  @media screen and (max-width: 850px) {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 550px) {
+    width: 300px;
+  }
+}
+.hero {
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

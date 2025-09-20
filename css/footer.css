@@ -3,14 +3,34 @@
   color: var(--white);
   padding: 0;
   margin: 0;
+  @media screen and (max-width: 900px) {
+    font-size: 1.75rem;
+  }
 }
 .footer-link {
   font-size: 1.125rem;
   color: var(--white);
   text-decoration: none;
   font-weight: 400;
+
+  @media screen and (max-width: 900px) {
+    font-size: 1rem;
+  }
 }
 .footer-seperator {
   background-color: white;
   height: 1px;
+}
+
+.footer {
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+.footer-nav {
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
 }

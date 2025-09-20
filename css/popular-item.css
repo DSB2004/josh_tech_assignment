@@ -1,5 +1,16 @@
 .popular-header {
   font-size: 2.5rem;
+  @media screen and (max-width: 850px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 1.4rem;
+  }
 }
 .swiper {
   width: 100%;
@@ -55,13 +66,30 @@
 }
 
 .swiper-button-next:hover,
-.swiper-button-prev:hover {
+.swiper-button-prev:hover,
+.swiper-button-disabled:hover {
   opacity: 100% !important;
   border: 2px solid var(--primary-green) !important;
   background-color: white !important;
 }
 
-.swiper-button-disabled::after:hover {
+.swiper-button-disabled {
+  pointer-events: auto !important;
+  opacity: 100% !important;
+}
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after,
+.swiper-button-disabled:hover::after {
+  pointer-events: auto !important;
   content: url(../assets/icons/green-play.svg) !important;
   rotate: 180deg;
+}
+
+.slider-card-custom {
+  transition: all 100ms ease-in-out;
+  box-shadow: 0;
+}
+
+.slider-card-custom:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.14);
 }
