@@ -211,10 +211,11 @@ window.onload = () => {
   const menu = document.getElementById("menu");
 
   menuButton.addEventListener("click", () => {
-    console.log(menu.style.width);
     if (menu.style.width === "250px") {
+      document.body.style.overflow = "";
       menu.style.width = "0px";
     } else {
+      document.body.style.overflow = "hidden";
       menu.style.width = "250px";
     }
   });
